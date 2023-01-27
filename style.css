@@ -1,4 +1,21 @@
 /* You're welcome to change any of this! */
+header {
+    background-color: #86C8BC;
+    margin: 0px;
+    padding: 15px;
+}
+
+h1 {
+    color: #FFFFFF;
+    font-family: "Press Start 2P";
+}
+
+h2 {
+    color: #86C8BC;
+    font-family: "Press Start 2P";
+}
+
+
 * {
     box-sizing: border-box;
 }
@@ -6,9 +23,13 @@
 body {
     margin: 0px;
     font-family: Arial, sans-serif;
+    background-color: #FFFFFF;
+    text-align: center;
+    
 }
 
 p, a, li {
     line-height: 1.5em;
     font-size: 1.1em;
+    text-align: center;
 }
