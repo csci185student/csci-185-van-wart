@@ -35,17 +35,24 @@ div {
 /**********/
 
 #demo1 a {
-   color: #fff;
-   background-color: #333;
+   color: white;
+   background-color: lime;
    text-decoration: none;
    padding: 5px 10px;
    display: inline-block;
+   transition: all 1s ease-out;
+   width: 100px;
+   height: 100px;
 }
 
 #demo1 a:hover,
 #demo1 a:focus {
    color: #333;
-   background-color: #fff;
+   background-color: fuchsia;
+   margin-left: 10px;
+   width: 150px;
+   height: 150px;
+   transform:skew(5deg)rotate(180);
 }
 
 
