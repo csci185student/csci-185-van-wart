@@ -34,10 +34,14 @@ body {
     font-family: "arcade-alternate", sans-serif;
     background-color: #FFFFFF;
     text-align: center;
+    color: #86C8BC;
+    font-size: 15px;
     
 }
 
-p, a, li {
+p, 
+a, 
+li {
     line-height: 1.5em;
     font-size: 1.1em;
     text-align: center;
