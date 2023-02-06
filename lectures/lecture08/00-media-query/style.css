@@ -27,6 +27,19 @@ header {
     height: 20vh;
 }
 
+header > button {
+    display: none;  
+}
+
+button {
+    padding: 1em;
+    background-color: aqua;
+    border: solid;
+    border-color:black;
+    font-weight: bold;
+    font-family:'Courier New', Courier, monospace;
+}
+
 main {
     height: 70vh;
 }
@@ -35,7 +48,38 @@ footer {
     height: 10vh;
 }
 
+/* this is tablet size */
 @media screen and (max-width: 800px) {
     /* Your code here! */
+    header {
+        background-color: gray;
+        color: white;
+        font-weight: bold;
+    }
+    footer {
+        background-color: gray;
+        color: white;
+        font-weight:bold;
+    }
+    main {
+        background-color: rgb(146, 230, 146);
+        font-weight: bold;
+    }
+    header > button {
+        display: inline-block;
+    }
+}
+
+/* this is iphone size */
+@media screen and (max-width: 400px) {
+    header {
+        background-color: limegreen;
+        font-weight: bold;
+    }
+
+    header > button {
+        display: none;
+    }
+
 }
 
