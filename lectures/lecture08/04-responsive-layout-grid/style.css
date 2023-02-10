@@ -26,38 +26,41 @@ body {
   box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.25);
 }
 
-.height-50 {
-  height: 50vh;
+.container {
+  display: grid;
+  grid-template-columns: 25% 50% 25%;
+  grid-template-rows: (4, auto);
+  column-gap: 10px;
+  row-gap: 10px;
 }
 
-/* Task 3 */
-
-.task-3.container {
+.header {
+  grid-column: 1 / 4;
+  grid-row: 1 / 2;
 }
 
-.task-3 .header {
+.navigation {
+  grid-column: 2 / 3;
+  grid-row: 2 / 3;
 }
 
-.task-3 .navigation {
+.main {
+  grid-column: 2 / 3;
+  grid-row: 3 / 5;
+  min-height: 60vh;
 }
 
-.task-3 .ads {
+.sidebar {
+  grid-column: 1 / 2;
+  grid-row: 2 / 5;
 }
 
-.task-3 .sidebar {
+.ads {
+  grid-column: 3 / 4;
+  grid-row: 2 / 5;
 }
 
-.task-3 .main {
-}
-
-.task-3 .footer {
-}
-
-
-
-@media (max-width: 1020px) {
-}
-
-
-@media (max-width: 720px) {
+.footer {
+  grid-column: 1 / 4;
+  grid-row: 5 / 6;
 }
