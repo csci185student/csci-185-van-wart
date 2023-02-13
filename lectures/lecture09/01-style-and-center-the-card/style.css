@@ -21,3 +21,50 @@ main {
 Part 1: Create some style blocks to style the card. 
     Experiment with: border, padding, margin, height, and width.
 */
+
+.card {
+    width: 25%;
+    border: double #CCC 5px;
+    transition: all .5s ease-in;
+}
+
+.card img {
+    width: 100%;
+}
+
+.card button {
+    margin: 15px;
+}
+
+.card h2 {
+    margin: 15px;
+}
+
+.card p {
+    margin: 15px
+}
+
+main {
+    background-color: lemonchiffon;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center; /*horizontal*/
+    align-items: center; /*vertical*/
+    column-gap: 20px;
+}
+
+/* phone */
+@media screen and (max-width: 450px) {
+    .card {
+        width: 90%;
+        border: double #CCC 5px;
+    }
+}
+
+/* tablet */
+@media screen and (max-width: 1000px) {
+    .card {
+        width: 60%;
+        border: double #CCC 5px;
+    }
+}
