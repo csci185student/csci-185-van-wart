@@ -7,6 +7,58 @@ body {
 .grid-container {
     height: 100vh;
     /* you will add addition rules for the container here  */
+    display: grid;
+    grid-template: repeat(5, 1fr) / repeat(5,1fr);
 }
 
 /* create your child rules here:  */
+
+.item-1 {
+    grid-column: 1 / span 3;
+    grid-row: 1;
+
+    text-align:center;
+    border: solid 3px black;
+    padding: 30px;
+    margin: auto;
+}
+
+.item-2 {
+    grid-column: 3 / span 3;
+    grid-row: 2;
+
+    text-align:center;
+    border: solid 3px black;
+    padding: 30px;
+    margin: auto;
+}
+
+.item-3 {
+    grid-column: 1 / span 3;
+    grid-row: 3;
+
+    text-align:center;
+    border: solid 3px black;
+    padding: 30px;
+    margin: auto;
+}
+
+.item-4 {
+    grid-column: 3 / span 3;
+    grid-row: 4;
+
+    text-align:center;
+    border: solid 3px black;
+    padding: 30px;
+    margin: auto;
+}
+
+.item-5 {
+    grid-column: 1 / span 3;
+    grid-row: 5;
+
+    text-align:center;
+    border: solid 3px black;
+    padding: 30px;
+    margin: auto;
+}

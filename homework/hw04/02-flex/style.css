@@ -12,3 +12,28 @@ body {
 }
 
 /* create additional rules below:  */
+
+main section {
+    min-height: 100vh;
+
+    display:flex;
+    justify-content: center;
+    align-items:center;
+    flex-direction: column;
+}
+
+#home {
+ background-color: #423E37;
+}
+
+#bio {
+ background-color: #E3B23C;
+}
+
+#portfolio {
+ background-color: #EDEBD7;
+}
+
+#contact {
+ background-color: #A39594;
+}

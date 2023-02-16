@@ -1,3 +1,17 @@
 body {
     font-family: Arial, Helvetica, sans-serif;
 }
+
+main {
+    display: grid;
+    grid-template: repeat(2, 1fr) / repeat(2, 1fr);
+}
+
+main section {
+    margin: 10px;
+    border: solid 2px gray;
+    padding: 10px;
+
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+}
