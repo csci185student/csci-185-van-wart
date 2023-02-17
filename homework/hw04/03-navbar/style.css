@@ -23,7 +23,7 @@ nav {
 }
 
 ul {
-    width: 50vw;
+    width: 300px;
     
     display: flex;
     justify-content: space-evenly;
