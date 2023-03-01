@@ -101,9 +101,10 @@ div {
     color: white;
     transition: all 1s ease-out;
 }
-#demo4 div:hover {
+#demo4 div:active {
     background: blue;
     opacity: 0.5;
+    transform: translate(200px);
 }
 
 
