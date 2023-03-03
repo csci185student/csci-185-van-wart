@@ -1,3 +1,13 @@
+@font-face {
+    font-family: "against";
+    src: url(against_2/against\ regular.ttf);
+}
+
+@font-face {
+   font-family: coolvetica;
+   src: url(coolvetica/coolvetica\ rg.otf)
+}
+
 html {
     scroll-behavior: smooth;
 }
@@ -11,3 +21,70 @@ body {
 }
 
 /* Your CSS Code Here! */
+nav {
+    width: 100%;
+    padding: 10px;
+}
+
+nav ul {
+    width: 400px;
+    display: flex;
+    list-style-type: none;
+    justify-content: space-between;
+    float: right;
+}
+
+nav a {
+    text-decoration: none;
+    color: #7A3E65;
+    font-family: against;
+}
+
+#profile-pic {
+    display: flex;
+    border-radius: 50%;
+    justify-content: center;
+    width: 150px;
+}
+
+header {
+    background-color: #F6E1C3;
+}
+
+h1, 
+h2,
+h3 {
+    font-family: against;
+    color: #7A3E65;
+}
+
+header h1 {
+    display: flex;
+    margin: 20px;
+    justify-content: center;
+}
+
+p {
+    font-family: coolvetica;
+}
+
+section {
+    margin: 100px;
+}
+
+.project-holder {
+    display: grid;
+    grid-template-columns: 2;
+    grid-template-rows: 2;
+}
+
+.card1 {
+    grid-row: 0 / 1;
+    grid-column: 0 / 1;
+}
+
+.card2 {
+    grid-row: 0 / 1;
+    grid-column: 2 / 3;
+}
+
