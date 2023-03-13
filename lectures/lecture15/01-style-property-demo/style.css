@@ -1,18 +1,24 @@
+@import url('https://fonts.googleapis.com/css2?family=Climate+Crisis&family=Rubik+Iso&display=swap');
+
 body {
     padding-left: 200px;
     padding-right: 200px;
+    font-family: 'Climate Crisis', cursive;
 }
 header {
     padding: 10px;
+    font-family: 'Climate Crisis', cursive;
 }
 #image-demo {
     width: 400px;
     border: solid 1px #000;
     margin: 10px;
+    font-family: 'Climate Crisis', cursive;
 }
 main {
     display: flex;
     justify-content: space-between;
+    font-family: 'Climate Crisis', cursive;
 }
 
 .my-section {
@@ -23,4 +29,5 @@ main {
     background-color: white;
     justify-content: center;
     align-items: center;
+    font-family: 'Climate Crisis', cursive;
 }
