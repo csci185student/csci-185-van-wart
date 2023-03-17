@@ -185,60 +185,15 @@ p {
 
 /* contact info */
 
-.contact-info { 
-    display: flex;
-    flex-direction: row-reverse;
-    flex-wrap: wrap;
-}
-/* 
-.contact-info {
-    display: grid;
-    grid-template-columns: 25% 75%;
-    grid-template-rows: repeat(3, 1fr);
-} */
-
-/* .info-row1 {
-    grid-row: 1 / 2;
-    display: flex;
+.info-row {
+ display: flex;
+ align-items:center;
+ column-gap: 1em;
 }
 
-.info-row2 {
-    grid-row: 2 / 3;
-    grid-column: 1 / 2;
+.info-row p {
+    margin: .4em;
 }
-
-.info-row2 {
-    grid-row: 3 / 4;
-} */
-
-/* .contact-info p {
-    margin: 0;
-}
-
-.fa-house-chimney {
-    grid-column: 1 / 2;
-    grid-row: 1 / 2;
-}
-
-.address {
-    grid-column: 2 / 3;
-    grid-row: 1 / 2;
-}
-
-.fa-mobile-screen {
-    grid-column: 1 / 2;
-    grid-row: 2 / 3;
-}
-
-.fa-envelope {
-    grid-column: 1 / 2;
-    grid-row: 3 / 4;
-}
-
-.email {
-    grid-column: 2 / 3;
-    grid-row: 3 / 4;
-} */
 
 input,
 textarea {
