@@ -1,6 +1,6 @@
 <!DOCTYPE html>
-<html>
-<head lang="en">
+<html lang="en">
+<head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -18,10 +18,13 @@
             </ul>
         </nav>
         <div>
-            <img id="profile-pic" src="images/profile.jpg" />
+            <img id="profile-pic" src="images/profile.jpg" alt="profile picture of a dog" />
         </div>
         <div>
-            <h1>Welcome to my portfolio website</h1>
+            <h1>
+                <span class="full-text">Welcome to My Portfolio Website</span>
+                <span class="short-text">Welcome to My Website</span>
+            </h1>
         </div>
     </header>
     <section id="about">
@@ -39,22 +42,22 @@
         <h2>Projects</h2>
         <div class="project-holder">
             <section class="card1">
-                <img src="https://picsum.photos/id/1061/300/200" alt="image description 1" />
+                <img src="https://picsum.photos/id/1061/300/200" alt="photo of a shoreline" />
                 <h3>Name of Project</h3>
                 <p>Ipsum lorem dolor aliquam ante commodo magna sed accumsan.</p>
             </section>
             <section class="card2">
-                <img src="https://picsum.photos/id/1015/300/200" alt="image description 2" />
+                <img src="https://picsum.photos/id/1015/300/200" alt="photo of a river gulley" />
                 <h3>Name of Project</h3>
                 <p>Ipsum lorem dolor aliquam ante commodo magna sed accumsan.</p>
             </section>
             <section class="card3">
-                <img src="https://picsum.photos/id/572/300/200" alt="image description 3" />
+                <img src="https://picsum.photos/id/572/300/200" alt="photo of foggy snow-capped mountains" />
                 <h3>Name of Project</h3>
                 <p>Ipsum lorem dolor aliquam ante commodo magna sed accumsan.</p>
             </section>
             <section class="card4">
-                <img src="https://picsum.photos/id/573/300/200" alt="image description 4" />
+                <img src="https://picsum.photos/id/573/300/200" alt="photo of a waterfall in a forest" />
                 <h3>Name of Project</h3>
                 <p>Ipsum lorem dolor aliquam ante commodo magna sed accumsan.</p>
             </section>
@@ -68,14 +71,33 @@
         <div class="contact-details">
             <form method="post" action="#">
                 <div class="row row1">
-                    <input type="text" name="name" id="name" placeholder="Name"/>
-                    <input type="email" name="email" id="email" placeholder="Email" />
+                    <input 
+                        type="text" 
+                        name="name" 
+                        id="name" 
+                        placeholder="Name" 
+                        aria-label="Name"/>
+                    <input 
+                        type="email" 
+                        name="email" 
+                        id="email" 
+                        placeholder="Email" 
+                        aria-label="Email" />
                 </div>
                 <div class="row">
-                    <textarea name="message" id="message" placeholder="Message" rows="4"></textarea>
+                    <textarea 
+                        name="message" 
+                        id="message" 
+                        placeholder="Message" 
+                        rows="4" 
+                        aria-label="Message"></textarea>
                 </div>
                 <div class="row">
-                    <input id="submit" type="submit" value="Send Message">
+                    <input 
+                        id="submit" 
+                        type="submit" 
+                        value="Send Message"
+                        aria-label="Submit">
                 </div>
             </form>
             </div>

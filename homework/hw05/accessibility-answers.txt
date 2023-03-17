@@ -1,14 +1,15 @@
 1. What corrections did you have to make?
 
-Your answers here.
+I had to add alt text to all of the images, add labels to the input boxes, and add the lang attribute to the html element.
+After adding the labels to the input boxes, I had to go into the CSS to set their display to "none".
 
 1. Do you think your website is usable if you turn off the CSS? Why or why not?
 
-Your answers here.
+The website is functional because all of the buttons, accessibility features, and input boxes still work. It doesn't look very good, though.
 
 1. Is your site is tabbable? In other words, without the use of the mouse, are all the links and buttons accessible using the tab key?
 
-Your answers here.
+All of the buttons are accessible through tabbing and pressing enter.
 
 
 
