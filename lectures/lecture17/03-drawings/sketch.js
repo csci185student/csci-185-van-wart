@@ -11,6 +11,22 @@ function setup() {
         * Draw some abstract art
     */
 
+    fill('white')
+    circle(700, 500, 200);
+
+    fill('white')
+    circle(700,370, 150);
+
+    fill('white')
+    circle(700,260,100);
+
+    fill('orange')
+    beginShape(TRIANGLES);
+        vertex(700, 260);
+        vertex(800, 250);
+        vertex(700, 200);
+    endShape()
+
     // https://p5js.org/reference/#/p5/circle
     fill("teal")
     circle(550, 100, 100);
