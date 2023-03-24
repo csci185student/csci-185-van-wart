@@ -1,9 +1,9 @@
 function makeBigger() {
-   alert('make bigger!');
+   document.querySelector('body').style.fontSize = '2em';
 };
 
 function makeSmaller() {
-   alert('make smaller!');
+   document.querySelector('body').style.fontSize = '10pt';
 };
 
 /*

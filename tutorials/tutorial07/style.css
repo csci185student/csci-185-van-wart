@@ -44,6 +44,14 @@ button {
     margin-right: 15px;
 }
 
+#bigger {
+    font-size: 20pt;
+}
+
+#smaller {
+    font-size: 15pt;
+}
+
 #a1 {
    font-size: 2em;
 }
@@ -116,3 +124,45 @@ h1 {
 .high-contrast button {
     color: black;
 }
+
+/* dyslexia mode */
+
+.dyslexia-mode {
+    letter-spacing: 0.35ch;
+    word-spacing: 1.225ch; /* 3.5x letter-spacing */
+    letter-spacing: 0.35ch;
+    word-spacing: 1.225ch; /* 3.5x letter-spacing */
+    font-variant-ligatures: none; /* explicitly disable ligatures */
+    font-weight: 600; /* demi-bold */
+    font-size: 150%; /* assuming 16px base size, convert to 18pt */
+}
+
+.dyslexia-mode main {
+    line-height: 2.0;
+ }
+ 
+ .dyslexia-mode main p {
+    margin-top: 3.5em;
+ }
+
+ .dyslexia-mode strong {
+    color: #000;
+  }
+
+  .dyslexia-mode h2 {
+    border: none; border-bottom: thin grey solid;  /* just keeping the bottom border for this element, to retain some separation */
+    max-width: 100%; /* standard width */
+    transform: none; /* do not rotate */
+    background-color: inherit; /* We no longer look like a label, so we don't require our own background */
+    margin-bottom: 1em; padding-left:0; /* some spacing adjustments */
+  }
+
+  .dyslexia-mode main li:nth-of-type(odd) {
+    background-color: palegoldenrod;
+}
+
+  @media(min-width:700px) { /* only apply on wider screens... */
+    body:not(.dyslexia-mode) main { /* ...if not in our friendly mode! */
+      background-image: url(https://res.cloudinary.com/jbowtie/image/upload/v1631662164/exclusive_paper_dyitgt.webp);
+    }
+  }
