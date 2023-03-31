@@ -14,8 +14,26 @@ function mouseDragged(){
     // the color, shape, and size of the paintbrush that are selected
     // in the right-hand panel. Replace the code below with something
     // smarter:
-    fill('hotpink');
-    circle(mouseX, mouseY, 20);
+    let fillColor = document.querySelector('#color').value;
+    const size = document.querySelector('#size').value;
+    const shape = document.querySelector('#shape').value;
+    const opacity = document.querySelector('#opacity').value;
+    const outline = document.querySelector('#outline').value;
+    const smartColor = color(fillColor)
+    smartColor.setAlpha(opacity)
+    fill(smartColor);
+    stroke(outline);
+    if (shape === 'circle') {
+        circle(mouseX,mouseY,size)
+    } else if (shape === 'triangle') {
+        triangle(
+            mouseX, mouseY - size / 2, // first point
+            mouseX - size / 2, mouseY + size / 2, // second point
+            mouseX + size / 2, mouseY + size / 2  // third point
+        )
+    } else {
+        square(mouseX, mouseY, size);   // x (top left), y (top left), width
+    }
 }
 
 
@@ -25,11 +43,11 @@ function mouseDragged(){
 
 // https://p5js.org/reference/#/p5/circle
 fill('pink');
-circle(400, 400, 100);   // x, y, diameter
+circle(mouseX, mouseY, 100);   // x, y, diameter
 
 // https://p5js.org/reference/#/p5/square
 fill('navy');
-square(50, 300, 50);   // x (top left), y (top left), width
+square(mouseX, mouseY, 50);   // x (top left), y (top left), width
 
 // https://p5js.org/reference/#/p5/triangle
 fill('teal');
