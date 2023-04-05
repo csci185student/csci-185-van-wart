@@ -14,11 +14,14 @@ async function setup() {
 // the function will be invoked over and over again
 // in an animation loop (which is part of how p5.js 
 // works).
+let counter = 1;
 function draw() {
     x += speed;
+    y -= 10 * Math.sin(counter / 5);
 
     clear();
     noFill();
     circle(x, y, width);
+    ++counter;
     drawGrid(canvasWidth, canvasHeight);
 }
