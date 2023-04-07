@@ -2,12 +2,21 @@ const canvasWidth = window.innerWidth;
 const canvasHeight = window.innerHeight; 
 
 // feel free to change these values as you like!
+
 const c1 = {
     x: 100,
     y: 100,
     width: 200,
-    speed: 0.2,
+    speed: 10,
     color: 'hotpink'
+};
+
+const c2 = {
+    x: 600,
+    y: 400,
+    width: 200,
+    speed: 10,
+    color: 'green'
 };
 
 
@@ -19,18 +28,38 @@ function setup() {
 
 // animation loop:
 function draw() {
+    
     // clear the canvas:
     clear();
 
     // move the car:
     c1.x += c1.speed;
 
+    // move the car:
+    c2.x -= c2.speed;
+
+    // redraw the car:
+    drawCar(c2.x, c2.y, c2.width, c2.color);
+
+    //check to see if it gets to the end
+    if (c1.x > canvasWidth + 300) {
+        c1.x = - 300;
+    }
+
+    //check to see if it gets to the end
+    if (c2.x < - 300) {
+        c2.x = canvasWidth + 300 ;
+    }
+
     // redraw the car:
     drawCar(c1.x, c1.y, c1.width, c1.color);
+
     
     // draw the grid (optional -- feel free to remove this line):
-    drawGrid(canvasWidth, canvasHeight);
+    // drawGrid(canvasWidth, canvasHeight);
 }
+
+
 
 
 // this function's job is to draw a car based on the 

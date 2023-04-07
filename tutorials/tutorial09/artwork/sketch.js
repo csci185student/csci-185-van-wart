@@ -14,22 +14,39 @@ function randomInt(min, max) {
 
 function setup() {
     createCanvas(canvasWidth, canvasHeight);
-    // frameRate(2);
-    
-    fill("#08415c");
+    frameRate(2);
 
-    // draw a random circle:
-    let x = randomInt(0, canvasWidth);
-    let y = randomInt(0, canvasHeight);
-    let size = randomFloat(25, 125);
-    circle(x, y, size);
-    
+      // draw a random circle:
+    //do this a bunch of times
+    let i = 0;
+    while (i < 100) {
+        fill(colors[randomInt(0,4)]);
+        let x = randomInt(0, canvasWidth);
+        let y = randomInt(0, canvasHeight);
+        let size = randomFloat(25, 125);
+        circle(x, y, size);
+        i++;
+        // ++i;
+        //i +=1;
+        //i = i + 1;
+
+        //draw squares:
+        fill(colors[1]);
+        let x1 = randomInt(0, canvasWidth);
+        let y1 = randomInt(0, canvasHeight);
+        let size1 = randomFloat(25, 125);
+        square(x1, y1, size1);
+        i++;
+    }
+  
 }
 
 
 // // anything that you want to animate goes in this function:  
 // function draw() {
-//     clear();
+    // clear();
+      
+ 
 
 // }
 
