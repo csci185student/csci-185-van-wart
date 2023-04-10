@@ -17,6 +17,8 @@ let idx = 0;
     (1) display the new image inside of the .current-photo container, and 
     (2) update the caption inside of the .caption paragraph
 */
+
+
 function showImage() {
     console.log('Show image');
     const currentPhoto = document.querySelector(".current-photo");
