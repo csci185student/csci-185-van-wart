@@ -19,6 +19,10 @@ let idx = 0;
 */
 function showImage() {
     console.log('Show image');
+    const currentPhoto = document.querySelector(".current-photo");
+    currentPhoto.innerHTML = `<img src="${photos[idx]}">`;
+    const caption = document.querySelector(".caption");
+    caption.innerHTML = `Image ${idx + 1} of ${photos.length}`;
 }
 
 
@@ -30,6 +34,11 @@ function showImage() {
 */
 function forward() {
     console.log('forward');
+    idx++;
+    if (idx > photos.length - 1) {
+        idx = 0;
+    }
+    showImage();
 }
 
 
@@ -41,4 +50,12 @@ function forward() {
 */
 function back() {
     console.log('back');
+    idx--;
+    if (idx < 0) {
+        idx = photos.length - 1;
+    }
+    showImage();
 }
+
+
+// I used chat GPT to help me and explain what things meant. I made sure to ask it lots of clarifying questions so that I could learn and understand.
