@@ -1,0 +1,9 @@
+What corrections did you have to make, and how did you make them?
+    I had to add alt text to the album, tracks, and artist images. I also had to add the language to the html tag.
+    I also had to add an aria label to the search bar input.
+Is this interface functional without the use of a mouse (i.e., just using keyboard keys)? Why or why not?
+    The interface works to navigate the various elements using tab and enter. However, the tab goes to the albums
+    right after the artist instead of going to the tracks. it could be improved by having the tab go straight to the
+    tracks after the artist.
+What are other accessibility tests or features you added or would be interested in learning about?
+    I would be interested in learning how to fix the above issue.
