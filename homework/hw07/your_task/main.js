@@ -85,7 +85,7 @@ async function getArtist(term) {
 };
 
 function loadTrack(trackId) {
-    document.querySelector("#artist-section").innerHTML = "<h1>Now Playing</h1>";
+    document.querySelector("#artist-section h1").innerHTML = "Now Playing";
     const template = `
         <iframe style="border-radius:12px"
             src="https://open.spotify.com/embed/track/${trackId}?utm_source=generator" 
